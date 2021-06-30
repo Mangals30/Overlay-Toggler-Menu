@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburger Menu Overlay</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/menu.css">
-</head>
-<body>
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger">
-      <div></div>
-    </div>
-    <div class="menu">
-      <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu Overlay</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
         <div>
-          <ul>
-            <li><a href="#" class="navlink">Home</a></li>
-            <li><a href="#" class="navlink">About</a></li>
-            <li><a href="#" class="navlink">Services</a></li>
-            <li><a href="#" class="navlink">Contact</a></li>
-          </ul>
+          <div>
+            <ul>
+              <li><a href="#" class="navlink">Home</a></li>
+              <li><a href="#" class="navlink">About</a></li>
+              <li><a href="#" class="navlink">Services</a></li>
+              <li><a href="#" class="navlink">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <header id="showcase">
-    <div class="container showcase-container">
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit ea nemo suscipit voluptates rem labore sit vel reprehenderit tempora.</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-  </header>
-  <script>
-    const navlink = document.getElementsByClassName('navlink')
-    for(let i=0; i<navlink.length; i++) {
-      navlink[i].addEventListener('click',clickHandler)
-    }
-    function clickHandler(e) {
-    e.preventDefault();
-    document.querySelector('.toggler').checked = false
-}
-  </script>
-</body>
+    <header id="showcase">
+      <div class="container showcase-container">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit ea
+          nemo suscipit voluptates rem labore sit vel reprehenderit tempora.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </header>
+    <script>
+      const navlink = document.getElementsByClassName('navlink')
+      for (let i = 0; i < navlink.length; i++) {
+        navlink[i].addEventListener('click', clickHandler)
+      }
+      function clickHandler(e) {
+        e.preventDefault()
+        document.querySelector('.toggler').checked = false
+      }
+    </script>
+  </body>
 </html>
